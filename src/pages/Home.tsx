@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin } from 'lucide-react';
+import henriquePhoto from '../../assets/henrique-photo-office-2.png';
 
 const Home = () => {
   const features = [
@@ -170,7 +171,7 @@ const Home = () => {
               para oferecer as melhores soluções em direito ambiental.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             {features.map((feature, index) => (
               <div key={index} className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-xl mb-6 group-hover:bg-emerald-200 transition-colors">
@@ -180,6 +181,36 @@ const Home = () => {
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
+          </div>
+
+          {/* Nossa História Subsection */}
+          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-10">
+            <div className="flex-1">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Nossa História</h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Há mais de 15 anos, temos o privilégio de atuar na vanguarda do direito ambiental brasileiro, acompanhando as transformações da legislação e as crescentes demandas por sustentabilidade em todos os setores da economia.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Nossa trajetória começou com um propósito claro: <span className="font-semibold text-emerald-700">tornar o direito ambiental acessível</span>, traduzindo a complexidade legal em soluções práticas e comunicação transparente para nossos clientes.
+              </p>
+              <p className="text-lg text-gray-700">
+                Hoje, somos reconhecidos como referência nacional em assessoria jurídica ambiental, atendendo desde pequenos empreendedores até grandes corporações, sempre mantendo nosso compromisso com a <span className="font-semibold text-emerald-700">disponibilidade total e relacionamento próximo</span>.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-6 md:w-96 w-full">
+              <img
+                src={henriquePhoto}
+                alt="Henrique Kratka"
+                className="w-full h-64 object-cover rounded-2xl shadow-lg mb-4"
+                style={{ maxWidth: '350px' }}
+              />
+              <div className="bg-emerald-50 p-6 rounded-xl w-full">
+                <h4 className="font-semibold text-emerald-900 mb-3">Missão</h4>
+                <p className="text-emerald-700 text-sm leading-relaxed">
+                  Tornar o direito ambiental acessível, traduzindo a complexidade legal em soluções práticas e comunicação transparente para nossos clientes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
