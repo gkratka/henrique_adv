@@ -197,19 +197,13 @@ const Home = () => {
                 Hoje, somos reconhecidos como referência nacional em assessoria jurídica ambiental, atendendo desde pequenos empreendedores até grandes corporações, sempre mantendo nosso compromisso com a <span className="font-semibold text-emerald-700">disponibilidade total e relacionamento próximo</span>.
               </p>
             </div>
-            <div className="flex flex-col items-center gap-6 md:w-96 w-full">
+            <div className="flex flex-col items-start md:w-96 w-full justify-start">
               <img
                 src={henriquePhoto}
                 alt="Henrique Kratka"
-                className="w-full h-64 object-cover rounded-2xl shadow-lg mb-4"
-                style={{ maxWidth: '350px' }}
+                className="w-full h-[420px] object-cover rounded-2xl shadow-lg"
+                style={{ maxWidth: '420px' }}
               />
-              <div className="bg-emerald-50 p-6 rounded-xl w-full">
-                <h4 className="font-semibold text-emerald-900 mb-3">Missão</h4>
-                <p className="text-emerald-700 text-sm leading-relaxed">
-                  Tornar o direito ambiental acessível, traduzindo a complexidade legal em soluções práticas e comunicação transparente para nossos clientes.
-                </p>
-              </div>
             </div>
           </div>
         </div>
