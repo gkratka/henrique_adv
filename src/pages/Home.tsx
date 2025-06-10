@@ -184,6 +184,34 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Contact Me Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full mb-4">Fale Conosco</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Vamos Conversar sobre Seu Projeto</h2>
+            <p className="text-lg text-gray-600">Nossa equipe está sempre disponível para esclarecer dúvidas e oferecer soluções personalizadas. Entre em contato e agende sua consulta gratuita.</p>
+          </div>
+          <form className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Nome *</label>
+                <input type="text" id="name" name="name" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="Seu nome completo" />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-mail *</label>
+                <input type="email" id="email" name="email" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="seu@email.com" />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Mensagem *</label>
+              <textarea id="message" name="message" required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none" placeholder="Descreva sua necessidade ou dúvida..."></textarea>
+            </div>
+            <button type="submit" className="w-full bg-emerald-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-200 flex items-center justify-center shadow-sm hover:shadow-md">Enviar Mensagem</button>
+          </form>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
