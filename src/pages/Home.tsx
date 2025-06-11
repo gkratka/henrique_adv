@@ -202,7 +202,7 @@ const Home = () => {
                 src={henriquePhoto}
                 alt="Henrique Kratka"
                 className="w-full h-[420px] object-cover rounded-2xl shadow-lg mt-10"
-                style={{ maxWidth: '420px', objectPosition: 'center 55%', transform: 'scale(1.35)' }}
+                style={{ maxWidth: '420px', objectPosition: 'center 30%' }}
               />
             </div>
           </div>
