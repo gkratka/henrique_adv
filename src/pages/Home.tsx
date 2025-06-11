@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin } from 'lucide-react';
-import henriquePhoto from '../assets/henrique-photo-office-2.png';
+import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 
 const Home = () => {
   const features = [
