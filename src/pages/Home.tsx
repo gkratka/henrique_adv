@@ -372,34 +372,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Precisa de Assessoria Jurídica Ambiental?
-          </h2>
-          <p className="text-xl text-emerald-100 mb-8 leading-relaxed">
-            Nossa equipe está pronta para ajudar. Agende uma consulta gratuita e 
-            descubra como podemos proteger seus interesses.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contato"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-emerald-600 font-semibold rounded-lg hover:bg-gray-50 transition-all duration-200 shadow-lg"
-            >
-              Agendar Consulta
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
-              to="/equipe"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-emerald-600 transition-all duration-200"
-            >
-              Conhecer a Equipe
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

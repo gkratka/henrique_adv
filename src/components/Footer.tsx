@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="text-white" style={{ backgroundColor: '#0B3D2E' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
@@ -50,17 +50,18 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1 text-emerald-400" />
                 <div className="text-sm text-gray-300">
-                  <p>Av. Paulista, 1500</p>
-                  <p>São Paulo - SP, 01310-100</p>
+                  <p>5° Avenida, n° 182, Quadra 102, Lote 13</p>
+                  <p>Setor Leste Universitário, Goiânia - GO</p>
+                  <p>CEP: 74605-040</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-emerald-400" />
-                <span className="text-sm text-gray-300">(11) 3456-7890</span>
+                <span className="text-sm text-gray-300">(62) 99994-0583</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-emerald-400" />
-                <span className="text-sm text-gray-300">contato@henriquekratka.com.br</span>
+                <span className="text-sm text-gray-300">hbconsultoriaambiental@gmail.com</span>
               </div>
             </div>
           </div>
