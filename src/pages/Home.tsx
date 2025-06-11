@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin } from 'lucide-react';
+import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 
 const Home = () => {
@@ -280,29 +280,93 @@ const Home = () => {
 
       {/* Contact Me Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full mb-4">Fale Conosco</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Vamos Conversar sobre Seu Projeto</h2>
-            <p className="text-lg text-gray-600">Nossa equipe está sempre disponível para esclarecer dúvidas e oferecer soluções personalizadas. Entre em contato e agende sua consulta gratuita.</p>
-          </div>
-          <form className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Nome *</label>
-                <input type="text" id="name" name="name" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="Seu nome completo" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Contact Info Column */}
+            <div className="space-y-6">
+              {/* Telefone */}
+              <div className="bg-emerald-50 p-6 rounded-2xl flex items-start gap-4">
+                <div className="bg-emerald-100 p-3 rounded-lg flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-emerald-600" />
+                </div>
+                <div>
+                  <div className="font-semibold text-lg text-emerald-900 mb-1">Telefone</div>
+                  <div className="text-gray-800 text-base">(62) 99994-0583</div>
+                  <div className="text-gray-500 text-sm">WhatsApp disponível</div>
+                </div>
               </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-mail *</label>
-                <input type="email" id="email" name="email" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" placeholder="seu@email.com" />
+              {/* E-mail */}
+              <div className="bg-white border border-emerald-100 p-6 rounded-2xl flex items-start gap-4">
+                <div className="bg-emerald-100 p-3 rounded-lg flex items-center justify-center">
+                  <Mail className="h-6 w-6 text-emerald-600" />
+                </div>
+                <div>
+                  <div className="font-semibold text-lg text-emerald-900 mb-1">E-mail</div>
+                  <div className="text-gray-800 text-base">hbconsultoriaambiental@gmail.com</div>
+                  <div className="text-gray-500 text-sm">Resposta em até 2h</div>
+                </div>
+              </div>
+              {/* Endereço */}
+              <div className="bg-white border border-emerald-100 p-6 rounded-2xl flex items-start gap-4">
+                <div className="bg-emerald-100 p-3 rounded-lg flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-emerald-600" />
+                </div>
+                <div>
+                  <div className="font-semibold text-lg text-emerald-900 mb-1">Endereço</div>
+                  <div className="text-gray-800 text-base">5° Avenida, n° 182, Quadra 102, Lote 13,<br />Setor Leste Universitário, Goiânia - GO<br />CEP: 74605-040</div>
+                </div>
+              </div>
+              {/* Horários */}
+              <div className="bg-white border border-emerald-100 p-6 rounded-2xl flex items-start gap-4">
+                <div className="bg-orange-100 p-3 rounded-lg flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-orange-600" />
+                </div>
+                <div>
+                  <div className="font-semibold text-lg text-orange-900 mb-1">Horários</div>
+                  <div className="text-gray-800 text-base">Segunda à Sexta: 8h às 18h<br />Sábado: 8h às 12h<br />Emergências: 24h</div>
+                </div>
               </div>
             </div>
+            {/* Form Column */}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Mensagem *</label>
-              <textarea id="message" name="message" required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none" placeholder="Descreva sua necessidade ou dúvida..."></textarea>
+              <div className="mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Solicite uma Consulta</h2>
+                <p className="text-lg text-gray-600">Preencha o formulário abaixo e nossa equipe entrará em contato em breve.</p>
+              </div>
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="nome" className="block text-base font-semibold text-gray-800 mb-2">Nome Completo</label>
+                  <input type="text" id="nome" name="nome" placeholder="João Silva" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-base font-semibold text-gray-800 mb-2">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="joao@exemplo.com" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base" />
+                </div>
+                <div>
+                  <label htmlFor="telefone" className="block text-base font-semibold text-gray-800 mb-2">Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base" />
+                </div>
+                <div>
+                  <label htmlFor="assunto" className="block text-base font-semibold text-gray-800 mb-2">Assunto Legal</label>
+                  <select id="assunto" name="assunto" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base">
+                    <option>Selecione uma área de atuação</option>
+                    <option>Licenciamento Ambiental</option>
+                    <option>Consultoria Jurídica</option>
+                    <option>Defesa Ambiental</option>
+                    <option>Compliance Ambiental</option>
+                    <option>Consultoria ESG</option>
+                    <option>Auditoria Legal</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="mensagem" className="block text-base font-semibold text-gray-800 mb-2">Sua Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" rows={5} placeholder="Por favor, descreva brevemente sua questão legal." className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base resize-none"></textarea>
+                </div>
+                <button type="submit" className="w-full bg-emerald-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-200 flex items-center justify-center shadow-sm hover:shadow-md">Enviar Mensagem</button>
+              </form>
             </div>
-            <button type="submit" className="w-full bg-emerald-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-200 flex items-center justify-center shadow-sm hover:shadow-md">Enviar Mensagem</button>
-          </form>
+          </div>
         </div>
       </section>
 
