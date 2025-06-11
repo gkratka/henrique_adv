@@ -209,6 +209,75 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Conhecimento que Transforma Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full mb-4">Conhecimento que Transforma</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Conhecimento que Transforma</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Mantenha-se atualizado com as últimas mudanças na legislação ambiental brasileira e insights práticos da nossa equipe de especialistas.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+              <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=800')" }}></div>
+              <div className="p-6 flex-1 flex flex-col">
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Compliance</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Compliance Ambiental: Guia Prático para PMEs</h3>
+                <p className="text-gray-600 mb-4 flex-1">Como pequenas e médias empresas podem implementar programas efetivos de compliance ambiental.</p>
+                <div className="flex items-center text-sm text-gray-500 mb-2">
+                  <span className="mr-2">👩‍⚕️ Dra. Ana Oliveira</span>
+                  <span className="mx-2">•</span>
+                  <span>7 min</span>
+                </div>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>10 de março, 2024</span>
+                  <Link to="#" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                </div>
+              </div>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+              <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=800')" }}></div>
+              <div className="p-6 flex-1 flex flex-col">
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Jurisprudência</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Áreas de Preservação Permanente: Novos Entendimentos</h3>
+                <p className="text-gray-600 mb-4 flex-1">Jurisprudência recente sobre delimitação e uso de APPs em propriedades rurais e urbanas.</p>
+                <div className="flex items-center text-sm text-gray-500 mb-2">
+                  <span className="mr-2">👨‍⚖️ Dr. Roberto Santos</span>
+                  <span className="mx-2">•</span>
+                  <span>6 min</span>
+                </div>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>5 de março, 2024</span>
+                  <Link to="#" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                </div>
+              </div>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+              <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=800')" }}></div>
+              <div className="p-6 flex-1 flex flex-col">
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Corporativo</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Due Diligence Ambiental em Fusões e Aquisições</h3>
+                <p className="text-gray-600 mb-4 flex-1">Principais riscos ambientais a serem avaliados em processos de M&A e como mitigá-los.</p>
+                <div className="flex items-center text-sm text-gray-500 mb-2">
+                  <span className="mr-2">👩‍💼 Dra. Mariana Costa</span>
+                  <span className="mx-2">•</span>
+                  <span>8 min</span>
+                </div>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>28 de fevereiro, 2024</span>
+                  <Link to="#" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Me Section */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
