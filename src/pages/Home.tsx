@@ -201,8 +201,8 @@ const Home = () => {
               <img
                 src={henriquePhoto}
                 alt="Henrique Kratka"
-                className="w-full h-[420px] object-cover rounded-2xl shadow-lg"
-                style={{ maxWidth: '420px' }}
+                className="w-full h-[420px] object-cover rounded-2xl shadow-lg mt-10"
+                style={{ maxWidth: '420px', objectPosition: 'center 30%' }}
               />
             </div>
           </div>
