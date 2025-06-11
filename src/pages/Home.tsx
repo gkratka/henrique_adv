@@ -184,7 +184,7 @@ const Home = () => {
           </div>
 
           {/* Nossa História Subsection */}
-          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-10">
+          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-10 mb-20">
             <div className="flex-1">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Nossa História</h3>
               <p className="text-lg text-gray-700 mb-6">
@@ -219,10 +219,10 @@ const Home = () => {
               Mantenha-se atualizado com as últimas mudanças na legislação ambiental brasileira e insights práticos da nossa equipe de especialistas.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-              <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=800')" }}></div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Placeholder Card 1 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
+              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&fit=crop&w=800&q=80)'}}></div>
               <div className="p-6 flex-1 flex flex-col">
                 <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Compliance</span>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Compliance Ambiental: Guia Prático para PMEs</h3>
@@ -238,9 +238,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* Card 2 */}
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-              <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=800')" }}></div>
+            {/* Placeholder Card 2 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
+              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&fit=crop&w=800&q=80)'}}></div>
               <div className="p-6 flex-1 flex flex-col">
                 <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Jurisprudência</span>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Áreas de Preservação Permanente: Novos Entendimentos</h3>
@@ -256,9 +256,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* Card 3 */}
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-              <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=800')" }}></div>
+            {/* Placeholder Card 3 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
+              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&fit=crop&w=800&q=80)'}}></div>
               <div className="p-6 flex-1 flex flex-col">
                 <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Corporativo</span>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Due Diligence Ambiental em Fusões e Aquisições</h3>
