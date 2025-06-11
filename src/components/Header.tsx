@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import henriqueLogo from '../assets/henrique-logo.png';
+import henriqueLogo from '../assets/henrique-logo-2.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,17 +19,17 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="shadow-sm border-b border-gray-100 sticky top-0 z-50" style={{ background: '#013220' }}>
+    <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img src={henriqueLogo} alt="Henrique Kratka Logo" className="h-12 w-12 rounded-lg object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(12%) sepia(18%) saturate(2000%) hue-rotate(20deg) brightness(90%) contrast(90%)' }} />
+            <img src={henriqueLogo} alt="Henrique Kratka Logo" className="h-12 w-12 rounded-lg object-contain" />
             <div className="leading-tight">
-              <div className="text-2xl font-extrabold tracking-widest uppercase" style={{ color: '#F3F4F6', letterSpacing: '0.15em' }}>
+              <div className="text-2xl font-extrabold tracking-widest uppercase text-gray-900" style={{ letterSpacing: '0.15em' }}>
                 HENRIQUE KRATKA
               </div>
-              <div className="text-lg font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em', textShadow: '2px 2px 0 #00000033' }}>
+              <div className="text-lg font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
                 ADVOGADOS
               </div>
             </div>
