@@ -285,44 +285,44 @@ const Home = () => {
             {/* Contact Info Column */}
             <div className="space-y-6">
               {/* Telefone */}
-              <div className="bg-emerald-50 p-6 rounded-2xl flex items-start gap-4">
-                <div className="bg-emerald-100 p-3 rounded-lg flex items-center justify-center">
-                  <Phone className="h-6 w-6 text-emerald-600" />
+              <div className="bg-white p-6 rounded-2xl flex items-start gap-4 border border-emerald-100">
+                <div className="flex items-center justify-center">
+                  <Phone className="h-7 w-7 text-emerald-600 stroke-2" />
                 </div>
                 <div>
-                  <div className="font-semibold text-lg text-emerald-900 mb-1">Telefone</div>
+                  <div className="font-semibold text-lg text-gray-900 mb-1">Telefone</div>
                   <div className="text-gray-800 text-base">(62) 99994-0583</div>
                   <div className="text-gray-500 text-sm">WhatsApp disponível</div>
                 </div>
               </div>
               {/* E-mail */}
               <div className="bg-white border border-emerald-100 p-6 rounded-2xl flex items-start gap-4">
-                <div className="bg-emerald-100 p-3 rounded-lg flex items-center justify-center">
-                  <Mail className="h-6 w-6 text-emerald-600" />
+                <div className="flex items-center justify-center">
+                  <Mail className="h-7 w-7 text-emerald-600 stroke-2" />
                 </div>
                 <div>
-                  <div className="font-semibold text-lg text-emerald-900 mb-1">E-mail</div>
+                  <div className="font-semibold text-lg text-gray-900 mb-1">E-mail</div>
                   <div className="text-gray-800 text-base">hbconsultoriaambiental@gmail.com</div>
                   <div className="text-gray-500 text-sm">Resposta em até 2h</div>
                 </div>
               </div>
               {/* Endereço */}
               <div className="bg-white border border-emerald-100 p-6 rounded-2xl flex items-start gap-4">
-                <div className="bg-emerald-100 p-3 rounded-lg flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-emerald-600" />
+                <div className="flex items-center justify-center">
+                  <MapPin className="h-7 w-7 text-emerald-600 stroke-2" />
                 </div>
                 <div>
-                  <div className="font-semibold text-lg text-emerald-900 mb-1">Endereço</div>
+                  <div className="font-semibold text-lg text-gray-900 mb-1">Endereço</div>
                   <div className="text-gray-800 text-base">5° Avenida, n° 182, Quadra 102, Lote 13,<br />Setor Leste Universitário, Goiânia - GO<br />CEP: 74605-040</div>
                 </div>
               </div>
               {/* Horários */}
               <div className="bg-white border border-emerald-100 p-6 rounded-2xl flex items-start gap-4">
-                <div className="bg-orange-100 p-3 rounded-lg flex items-center justify-center">
-                  <Clock className="h-6 w-6 text-orange-600" />
+                <div className="flex items-center justify-center">
+                  <Clock className="h-7 w-7 text-orange-600 stroke-2" />
                 </div>
                 <div>
-                  <div className="font-semibold text-lg text-orange-900 mb-1">Horários</div>
+                  <div className="font-semibold text-lg text-gray-900 mb-1">Horários</div>
                   <div className="text-gray-800 text-base">Segunda à Sexta: 8h às 18h<br />Sábado: 8h às 12h<br />Emergências: 24h</div>
                 </div>
               </div>
@@ -347,16 +347,19 @@ const Home = () => {
                   <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base" />
                 </div>
                 <div>
-                  <label htmlFor="assunto" className="block text-base font-semibold text-gray-800 mb-2">Assunto Legal</label>
+                  <label htmlFor="assunto" className="block text-base font-semibold text-gray-800 mb-2">Assunto</label>
                   <select id="assunto" name="assunto" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors text-base">
                     <option>Selecione uma área de atuação</option>
-                    <option>Licenciamento Ambiental</option>
-                    <option>Consultoria Jurídica</option>
-                    <option>Defesa Ambiental</option>
-                    <option>Compliance Ambiental</option>
-                    <option>Consultoria ESG</option>
-                    <option>Auditoria Legal</option>
-                    <option>Outro</option>
+                    <option>Embargos / Infrações Ambientais</option>
+                    <option>Industrial</option>
+                    <option>Mineral</option>
+                    <option>Florestal</option>
+                    <option>Irrigação</option>
+                    <option>Outorga de Uso da Água</option>
+                    <option>Piscicultura</option>
+                    <option>Loteamento</option>
+                    <option>Georreferenciamento</option>
+                    <option>Outro Assunto</option>
                   </select>
                 </div>
                 <div>
