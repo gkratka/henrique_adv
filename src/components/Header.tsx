@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import henriqueLogo from '../assets/henrique-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,12 +24,14 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="bg-emerald-600 p-2 rounded-lg group-hover:bg-emerald-700 transition-colors">
-              <span className="text-white font-bold text-xl">H</span>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-gray-900">HENRIQUE KRATKA Advogados</div>
-              <div className="text-xs text-emerald-600 font-medium">Direito Ambiental</div>
+            <img src={henriqueLogo} alt="Henrique Kratka Logo" className="h-12 w-12 rounded-lg object-contain" />
+            <div className="leading-tight">
+              <div className="text-2xl font-extrabold tracking-widest uppercase text-gray-900" style={{ letterSpacing: '0.15em' }}>
+                HENRIQUE KRATKA
+              </div>
+              <div className="text-lg font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
+                ADVOGADOS
+              </div>
             </div>
           </Link>
 
