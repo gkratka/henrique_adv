@@ -116,7 +116,7 @@ const Home = () => {
             <div className="mt-12 lg:mt-0 lg:col-span-5">
               <div className="relative">
                 <img
-                  src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={backgroundPic1}
                   alt="Natureza brasileira - Floresta preservada"
                   className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                 />
@@ -203,7 +203,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-start md:w-96 w-full justify-start">
               <img
-                src={backgroundPic1}
+                src={henriquePhoto}
                 alt="Henrique Kratka"
                 className="w-full h-[420px] object-cover rounded-2xl shadow-lg mt-10"
                 style={{ maxWidth: '420px', objectPosition: 'center 30%' }}
