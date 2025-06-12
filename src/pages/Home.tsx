@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import henriquePhoto from '../assets/henrique-photo-zoomed.png';
+import backgroundPic1 from '../assets/background-pic-1.jpeg';
 
 const Home = () => {
   const features = [
@@ -202,7 +203,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-start md:w-96 w-full justify-start">
               <img
-                src={henriquePhoto}
+                src={backgroundPic1}
                 alt="Henrique Kratka"
                 className="w-full h-[420px] object-cover rounded-2xl shadow-lg mt-10"
                 style={{ maxWidth: '420px', objectPosition: 'center 30%' }}
