@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import henriqueLogo from '../assets/henrique-logo.png';
 
 const Footer = () => {
   return (
@@ -10,12 +11,14 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="bg-emerald-600 p-2 rounded-lg">
-                <span className="text-white font-bold text-xl">H</span>
-              </div>
+              <img src={henriqueLogo} alt="Henrique Kratka Logo" className="h-16 w-16 rounded-lg object-contain" />
               <div>
-                <div className="text-xl font-bold">HENRIQUE KRATKA Advogados</div>
-                <div className="text-sm text-emerald-400">Direito Ambiental</div>
+                <div className="text-lg font-extrabold tracking-widest uppercase" style={{ letterSpacing: '0.15em', color: '#444444', fontFamily: 'sans-serif' }}>
+                  HENRIQUE KRATKA
+                </div>
+                <div className="text-sm font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
+                  ADVOGADOS
+                </div>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
