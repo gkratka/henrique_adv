@@ -29,7 +29,7 @@ const Header = () => {
               <div className="text-lg font-extrabold tracking-widest uppercase" style={{ letterSpacing: '0.15em', color: '#444444', fontFamily: 'sans-serif' }}>
                 HENRIQUE KRATKA
               </div>
-              <div className="text-base font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
+              <div className="text-sm font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
                 ADVOGADOS
               </div>
             </div>
