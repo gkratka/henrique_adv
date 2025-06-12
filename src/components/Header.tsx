@@ -26,10 +26,10 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <img src={henriqueLogo} alt="Henrique Kratka Logo" className="h-16 w-16 rounded-lg object-contain" />
             <div className="leading-tight">
-              <div className="text-2xl font-extrabold tracking-widest uppercase text-white" style={{ letterSpacing: '0.15em', fontFamily: 'sans-serif' }}>
+              <div className="text-2xl font-extrabold tracking-widest uppercase" style={{ letterSpacing: '0.15em', color: '#222', fontFamily: 'sans-serif' }}>
                 HENRIQUE KRATKA
               </div>
-              <div className="text-lg font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em', fontFamily: 'sans-serif' }}>
+              <div className="text-lg font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
                 ADVOGADOS
               </div>
             </div>
