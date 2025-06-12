@@ -187,8 +187,17 @@ const Home = () => {
           <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-10 mb-20">
             <div className="flex-1">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Nossa História</h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Natural de Goiânia, Henrique é especialista em Direito e Processo Penal, com MBA em Perícia, Auditoria e Gestão Ambiental.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Desde 2006, atua na área ambiental, inicialmente como consultor, atendendo produtores rurais, empresas e empreendedores em processos de licenciamento, regularização fundiária e gestão junto a órgãos ambientais.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Com ampla experiência prática e estratégica, integrou sua atuação técnica ao campo jurídico, oferecendo soluções completas e sustentáveis no setor ambiental e do agronegócio.
+              </p>
               <p className="text-lg text-gray-700">
-                Natural de Goiânia, Henrique é especialista em Direito e Processo Penal, com MBA em Perícia, Auditoria e Gestão Ambiental. Desde 2006, atua na área ambiental, inicialmente como consultor, atendendo produtores rurais, empresas e empreendedores em processos de licenciamento, regularização fundiária e gestão junto a órgãos ambientais. Com ampla experiência prática e estratégica, integrou sua atuação técnica ao campo jurídico, oferecendo soluções completas e sustentáveis no setor ambiental e do agronegócio. Seu trabalho é pautado pela ética, <span className="font-semibold text-emerald-700">responsabilidade e compromisso com a segurança jurídica e ambiental de seus clientes</span>, sempre visando ao desenvolvimento econômico aliado à preservação dos recursos naturais.
+                Seu trabalho é pautado pela ética, <span className="font-semibold text-emerald-700">responsabilidade e compromisso com a segurança jurídica e ambiental de seus clientes</span>, sempre visando ao desenvolvimento econômico aliado à preservação dos recursos naturais.
               </p>
             </div>
             <div className="flex flex-col items-start md:w-96 w-full justify-start">
