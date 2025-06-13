@@ -5,6 +5,7 @@ import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 import backgroundPic1 from '../assets/background-pic-1.jpeg';
 import embargoAmbientalImg from '../assets/embargo-ambiental.png';
 import licensiamentoAmbientalImg from '../assets/licensiamento-ambiental.png';
+import recursosHidricosImg from '../assets/recursos-hidricos.png';
 
 const Home = () => {
   const features = [
@@ -228,19 +229,17 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Placeholder Card 1 */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
-              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&fit=crop&w=800&q=80)'}}></div>
+              <img src={recursosHidricosImg} alt="Outorga de Uso da Água" className="h-48 w-full rounded-t-2xl object-cover object-center" />
               <div className="p-6 flex-1 flex flex-col">
-                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Compliance</span>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Compliance Ambiental: Guia Prático para PMEs</h3>
-                <p className="text-gray-600 mb-4 flex-1">Como pequenas e médias empresas podem implementar programas efetivos de compliance ambiental.</p>
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Outorga de Uso da Água</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">A importância da outorga no uso dos recursos hídricos</h3>
+                <p className="text-gray-600 mb-4 flex-1">Saiba por que a outorga é fundamental para o uso legal e sustentável da água em atividades agropecuárias, industriais e de irrigação, e como garantir segurança jurídica e ambiental para seu projeto.</p>
                 <div className="flex items-center text-sm text-gray-500 mb-2">
-                  <span className="mr-2">👩‍⚕️ Dra. Ana Oliveira</span>
-                  <span className="mx-2">•</span>
-                  <span>7 min</span>
+                  <span className="mr-2">Fonte: Itamarandiba Hoje</span>
                 </div>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>10 de março, 2024</span>
-                  <Link to="#" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                  <span>21 de outubro, 2024</span>
+                  <a href="https://www.itamarandibahoje.com.br/noticias/agro-hoje/a-importancia-da-outorga-no-uso-dos-recursos-hidricos.html" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></a>
                 </div>
               </div>
             </div>
