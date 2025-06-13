@@ -185,7 +185,7 @@ const Home = () => {
           </div>
 
           {/* Nossa História Subsection */}
-          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-10 mb-20">
+          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-10">
             <div className="flex-1">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Nossa História</h3>
               <p className="text-lg text-gray-700 mb-6">
