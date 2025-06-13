@@ -4,6 +4,7 @@ import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Dro
 import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 import backgroundPic1 from '../assets/background-pic-1.jpeg';
 import embargoAmbientalImg from '../assets/embargo-ambiental.png';
+import licensiamentoAmbientalImg from '../assets/licensiamento-ambiental.png';
 
 const Home = () => {
   const features = [
@@ -245,19 +246,17 @@ const Home = () => {
             </div>
             {/* Placeholder Card 2 */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
-              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&fit=crop&w=800&q=80)'}}></div>
+              <img src={licensiamentoAmbientalImg} alt="Licenciamento Ambiental" className="h-48 w-full rounded-t-2xl object-cover object-center" />
               <div className="p-6 flex-1 flex flex-col">
-                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Jurisprudência</span>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Áreas de Preservação Permanente: Novos Entendimentos</h3>
-                <p className="text-gray-600 mb-4 flex-1">Jurisprudência recente sobre delimitação e uso de APPs em propriedades rurais e urbanas.</p>
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Licenciamento Ambiental</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Estudos Ambientais e Licenciamento: O que você precisa saber</h3>
+                <p className="text-gray-600 mb-4 flex-1">Descubra a importância dos estudos ambientais e do licenciamento para empreendimentos, etapas do processo, exigências legais e como garantir a regularização ambiental de forma eficiente.</p>
                 <div className="flex items-center text-sm text-gray-500 mb-2">
-                  <span className="mr-2">👨‍⚖️ Dr. Roberto Santos</span>
-                  <span className="mx-2">•</span>
-                  <span>6 min</span>
+                  <span className="mr-2">Fonte: Premium Agroambiental</span>
                 </div>
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <span>5 de março, 2024</span>
-                  <Link to="#" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                  <a href="https://www.premiumagroambiental.com.br/estudos-ambientais-licenciamento-ambiental?" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></a>
                 </div>
               </div>
             </div>
