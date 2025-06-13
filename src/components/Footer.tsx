@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img src={henriqueLogo} alt="Henrique Kratka Logo" className="h-16 w-16 rounded-lg object-contain" />
               <div>
-                <div className="text-lg font-extrabold tracking-widest uppercase" style={{ letterSpacing: '0.15em', color: '#444444', fontFamily: 'sans-serif' }}>
+                <div className="text-lg font-extrabold tracking-widest uppercase" style={{ letterSpacing: '0.15em', color: '#222', fontFamily: 'sans-serif' }}>
                   HENRIQUE KRATKA
                 </div>
                 <div className="text-sm font-extrabold uppercase" style={{ color: '#BFA14A', letterSpacing: '0.12em' }}>
