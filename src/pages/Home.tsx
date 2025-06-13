@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock, Fish, Home as HomeIcon } from 'lucide-react';
 import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 import backgroundPic1 from '../assets/background-pic-1.jpeg';
+import embargoAmbiental from '../assets/embargo-ambiental.png';
 
 const Home = () => {
   const features = [
@@ -262,19 +263,19 @@ const Home = () => {
             </div>
             {/* Placeholder Card 3 */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
-              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: 'url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&fit=crop&w=800&q=80)'}}></div>
+              <div className="h-48 w-full rounded-t-2xl bg-cover bg-center" style={{backgroundImage: `url(${embargoAmbiental})`}}></div>
               <div className="p-6 flex-1 flex flex-col">
-                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Corporativo</span>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Due Diligence Ambiental em Fusões e Aquisições</h3>
-                <p className="text-gray-600 mb-4 flex-1">Principais riscos ambientais a serem avaliados em processos de M&A e como mitigá-los.</p>
+                <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Embargos Ambiental</span>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Multa e Embargo Ambiental: O que fazer?</h3>
+                <p className="text-gray-600 mb-4 flex-1">Descubra como agir diante de multas e embargos ambientais, quais são seus direitos e os principais passos para regularizar sua situação junto aos órgãos ambientais.</p>
                 <div className="flex items-center text-sm text-gray-500 mb-2">
-                  <span className="mr-2">👩‍💼 Dra. Mariana Costa</span>
+                  <span className="mr-2">🌱 Equipe Laporte & Queiroz</span>
                   <span className="mx-2">•</span>
-                  <span>8 min</span>
+                  <span>Leitura rápida</span>
                 </div>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>28 de fevereiro, 2024</span>
-                  <Link to="#" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                  <span>Atualizado em 2024</span>
+                  <a href="https://laportequeiroz.adv.br/multa-e-embargo-ambiental/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:underline flex items-center">Ler mais <ArrowRight className="ml-1 h-4 w-4" /></a>
                 </div>
               </div>
             </div>
