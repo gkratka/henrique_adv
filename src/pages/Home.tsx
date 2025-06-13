@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock, Fish, Home as HomeIcon } from 'lucide-react';
 import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 import backgroundPic1 from '../assets/background-pic-1.jpeg';
 
@@ -25,11 +25,6 @@ const Home = () => {
 
   const services = [
     {
-      icon: Factory,
-      title: 'Industrial',
-      description: 'Prestamos serviços para obtenção de licenças ambientais para indústrias.'
-    },
-    {
       icon: Gem,
       title: 'Mineral',
       description: 'A mineração é essencial para a cadeia produtiva e o dia a dia da sociedade.'
@@ -40,14 +35,19 @@ const Home = () => {
       description: 'Suporte técnico e jurídico para licenciamento ambiental e outorga na zona rural.'
     },
     {
-      icon: Droplets,
-      title: 'Irrigação',
-      description: 'Irrigação envolve reservatórios, captação, distribuição e drenagem.'
-    },
-    {
       icon: FileCheck,
       title: 'Outorga de Uso da Água',
       description: 'Outorga da água é obrigatória para uso de recursos hídricos.'
+    },
+    {
+      icon: Fish,
+      title: 'Piscicultura',
+      description: 'O crescimento populacional impulsionou a degradação ambiental.'
+    },
+    {
+      icon: HomeIcon,
+      title: 'Loteamento',
+      description: 'Avaliação de impactos para licenciamento de loteamentos.'
     },
     {
       icon: MapPin,
