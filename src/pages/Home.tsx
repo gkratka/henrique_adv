@@ -65,6 +65,15 @@ const Home = () => {
     { number: '15+', label: 'Anos de Experiência', icon: Award }
   ];
 
+  // Scroll to Contato section
+  const scrollToContato = (e) => {
+    e.preventDefault();
+    const el = document.getElementById('contato');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -86,13 +95,13 @@ const Home = () => {
                 indivíduos em todo o Brasil. Comunicação clara, disponibilidade total.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link
-                  to="/contato"
+                <button
+                  onClick={scrollToContato}
                   className="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   Consulta Gratuita
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </button>
                 <Link
                   to="/servicos"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg hover:bg-emerald-50 transition-all duration-200"
