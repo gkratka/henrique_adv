@@ -220,7 +220,7 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full mb-4">Notícias e Blog</span>
+            <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full mb-4">Notícias e Artigos</span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Conhecimento que Transforma</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Mantenha-se atualizado com as últimas mudanças na legislação ambiental brasileira e insights práticos da nossa equipe de especialistas.
