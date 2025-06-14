@@ -7,6 +7,13 @@ import embargoAmbientalImg from '../assets/embargo-ambiental.png';
 import licensiamentoAmbientalImg from '../assets/licensiamento-ambiental.png';
 import recursosHidricosImg from '../assets/recursos-hidricos.png';
 
+const scrollToContato = () => {
+  const el = document.getElementById('contato');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Home = () => {
   const features = [
     {
@@ -65,15 +72,6 @@ const Home = () => {
     { number: '15+', label: 'Anos de Experiência', icon: Award }
   ];
 
-  // Scroll to Contato section
-  const scrollToContato = (e) => {
-    e.preventDefault();
-    const el = document.getElementById('contato');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -98,6 +96,7 @@ const Home = () => {
                 <button
                   onClick={scrollToContato}
                   className="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  type="button"
                 >
                   Consulta Gratuita
                   <ArrowRight className="ml-2 h-5 w-5" />

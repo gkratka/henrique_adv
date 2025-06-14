@@ -3,6 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import henriqueLogo from '../assets/henrique-logo.png';
 
+const scrollToContato = () => {
+  const el = document.getElementById('contato');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -54,12 +61,13 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link
-              to="/contato"
+            <button
+              onClick={scrollToContato}
               className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-all duration-200 shadow-sm hover:shadow-md"
+              type="button"
             >
               Consulta Gratuita
-            </Link>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -89,13 +97,13 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/contato"
+              <button
+                onClick={() => { scrollToContato(); setIsMenuOpen(false); }}
                 className="block w-full mt-4 bg-emerald-600 text-white px-3 py-2 rounded-lg font-medium text-center hover:bg-emerald-700 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                type="button"
               >
                 Consulta Gratuita
-              </Link>
+              </button>
             </div>
           </div>
         )}
