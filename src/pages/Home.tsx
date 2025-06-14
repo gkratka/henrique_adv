@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock, Fish, Home as HomeIcon } from 'lucide-react';
+import { ArrowRight, Shield, Users, Award, CheckCircle, Factory, Gem, Trees, Droplets, FileCheck, MapPin, Phone, Mail, Clock, Fish, Home as HomeIcon, MessageCircle } from 'lucide-react';
 import henriquePhoto from '../assets/henrique-photo-zoomed.png';
 import backgroundPic1 from '../assets/background-pic-1.jpeg';
 import embargoAmbientalImg from '../assets/embargo-ambiental.png';
@@ -373,6 +373,20 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/5562984057480"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg p-4 flex items-center justify-center transition-colors duration-200"
+        style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}
+        aria-label="Fale conosco no WhatsApp"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.174.2-.298.3-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.2 5.077 4.363.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 5.421h-.001a8.933 8.933 0 0 1-4.548-1.252l-.326-.194-3.382.889.902-3.293-.213-.338a8.922 8.922 0 0 1-1.373-4.726c.001-4.941 4.011-8.951 8.954-8.951 2.389 0 4.637.933 6.324 2.623a8.822 8.822 0 0 1 2.624 6.326c-.003 4.941-4.013 8.951-8.954 8.951m7.688-16.611A10.92 10.92 0 0 0 12.051 0C5.495 0 .052 5.444.049 12c0 2.116.552 4.184 1.6 5.998L0 24l6.184-1.618A11.01 11.01 0 0 0 12.051 24c6.557 0 11.999-5.443 12-12.001.001-2.652-.82-5.197-2.368-7.207"/>
+        </svg>
+      </a>
     </div>
   );
 };
