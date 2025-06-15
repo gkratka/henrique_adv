@@ -4,10 +4,12 @@ import { Menu, X } from 'lucide-react';
 import henriqueLogo from '../assets/henrique-logo.png';
 
 const scrollToContato = () => {
-  const el = document.getElementById('contato');
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
-  }
+  setTimeout(() => {
+    const el = document.getElementById('contato');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 100);
 };
 
 const Header = () => {

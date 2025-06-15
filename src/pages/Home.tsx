@@ -8,10 +8,12 @@ import licensiamentoAmbientalImg from '../assets/licensiamento-ambiental.png';
 import recursosHidricosImg from '../assets/recursos-hidricos.png';
 
 const scrollToContato = () => {
-  const el = document.getElementById('contato');
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
-  }
+  setTimeout(() => {
+    const el = document.getElementById('contato');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 100);
 };
 
 const Home = () => {
