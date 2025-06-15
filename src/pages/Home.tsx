@@ -10,6 +10,7 @@ import recursosHidricosImg from '../assets/recursos-hidricos.png';
 const scrollToContato = () => {
   setTimeout(() => {
     const el = document.getElementById('contato');
+    console.log('Scroll handler called. Element:', el);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
